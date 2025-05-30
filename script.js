@@ -34,7 +34,7 @@ function renderPostList() {
           <p class="text-muted">${post.wordCount} words • ${post.readTime} min</p>
           <button class="btn btn-outline-primary btn-sm" onclick="renderPost('${post.id}')">Read →</button>
         </div>
-        <img src="${post.image}" class="rounded" style="max-height:100px;">
+        <img src="${post.image}" class="rounded" style="max-height:150px;">
       </div>
     `;
 
