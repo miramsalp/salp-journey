@@ -19,3 +19,32 @@ pre {
   font-family: monospace;
   overflow-x: auto;
 }
+
+.hero-bg {
+  background-image: url('./assets/images/bg-from-freepik.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+  z-index: 1;
+}
+
+#page {
+  margin-top: -100px; 
+  z-index: 10;
+  position: relative;
+}
+
+.bc:hover {
+  background-color: rgb(235, 243, 255);
+  border-radius: 10%;
+}
+
+.bc {
+  width: 100px;
+  text-align: center;
+}
+
+/* #navbar {
+  background-color: black;
+} */
