@@ -28,6 +28,12 @@ function renderPostList() {
     const el = document.createElement("div");
     el.className = "card mb-4 p-4 shadow-sm";
 
+    const imageHtml = post.image
+      ? `<div class="col-md-4 order-1 order-md-2 mb-3 mb-md-0">
+          <img src="${post.image}" class="img-fluid rounded w-100 h-100 object-fit-cover" style="max-height: 180px;" alt="${post.title}" onerror="this.parentElement.remove();">
+        </div>`
+      : "";
+
     el.innerHTML = `
       <div class="row g-0 flex-column flex-md-row">
         <div class="col-md-8 order-2 order-md-1">
@@ -45,15 +51,10 @@ function renderPostList() {
             }')">Read →</button>
           </div>
         </div>
-        <div class="col-md-4 order-1 order-md-2 mb-3 mb-md-0">
-          <img src="${
-            post.image
-          }" class="img-fluid rounded w-100 h-100 object-fit-cover" style="max-height: 180px;" alt="${
-      post.title
-    }">
-        </div>
+        ${imageHtml}
       </div>
     `;
+
     listEl.appendChild(el);
   });
 
@@ -93,17 +94,22 @@ function renderPost(id) {
     .then((res) => res.json())
     .then((post) => {
       contentEl.innerHTML = `
-        <div class="card p-4 mb-4 shadow">
-          <button class="btn btn-link mb-3" onclick="renderPostList()">← Back to List</button>
-          <h1 class="fw-bold mb-2">${post.title}</h1>
-          <div class="text-muted mb-2">📅 ${post.date} ${
-        post.update ? `| 🔁 ${post.update}` : ""
-      } • ${post.wordCount} words • ${post.readTime} min</div>
-          <div class="mb-3">${renderTags(post.tags)}</div>
-          <hr />
-          <div>${post.content}</div>
-        </div>
-      `;
+      <div class="card p-4 mb-4 shadow">
+        <button class="btn btn-link mb-3" onclick="renderPostList()">← Back to List</button>
+        <h1 class="fw-bold mb-2">${post.title}</h1>
+        <div class="text-muted mb-2">📅 ${post.date} ${
+            post.update ? `| 🔁 ${post.update}` : ""
+          } • ${post.wordCount} words • ${post.readTime} min</div>
+        <div class="mb-3">${renderTags(post.tags)}</div>
+        ${
+          post.image
+            ? `<img src="${post.image}" class="img-fluid rounded mb-3 w-100" alt="${post.title}">`
+            : ""
+        }
+        <hr />
+        <div>${post.content}</div>
+      </div>
+    `;
     });
 }
 

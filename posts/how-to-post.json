@@ -1,0 +1,11 @@
+{
+  "id": "how-to-post",
+  "title": "How to Post a Blog",
+  "date": "2025-06-01",
+  "update": "",
+  "tags": ["Guide"],
+  "wordCount": 198,
+  "readTime": 1,
+  "image": "",
+  "content": "<h2>Step-by-Step to Publish a New Blog</h2>\n<p>Follow these steps to add your own post to this blog system.</p>\n\n<h3>1. Prepare Your Post Content</h3>\n<p>Write your blog content using standard HTML. You can use headers, paragraphs, lists, and even code blocks like below:</p>\n<pre class=\"bg-dark text-white p-3 rounded\"><code>// Example content section\n&lt;h2&gt;My Journey to 1000 in Bullet Chess&lt;/h2&gt;\n&lt;p&gt;After lots of blunders, I finally made it!&lt;/p&gt;</code></pre>\n\n<h3>2. Save as a JSON File</h3>\n<p>Use this structure for your blog file (e.g., <code>how-to-post.json</code>):</p>\n<pre class=\"bg-dark text-white p-3 rounded\"><code>{\n  \"id\": \"how-to-post\",\n  \"title\": \"📝 How to Post a Blog\",\n  \"date\": \"2025-06-01\",\n  \"tags\": [\"guide\", \"blog\"],\n  \"wordCount\": 198,\n  \"readTime\": 1,\n  \"image\": \"./assets/images/howtopost.png\",\n  \"content\": \"...HTML content here...\"\n}</code></pre>\n\n<h3>3. Add it to <code>index.json</code></h3>\n<p>Finally, open <code>posts/index.json</code> and add the new entry:</p>\n<pre class=\"bg-dark text-white p-3 rounded\"><code>{\n  \"id\": \"how-to-post\",\n  \"title\": \"📝 How to Post a Blog\",\n  \"date\": \"2025-06-01\",\n  \"tags\": [\"guide\", \"blog\"],\n  \"wordCount\": 198,\n  \"readTime\": 1,\n  \"image\": \"./assets/images/howtopost.png\"\n}</code></pre>\n\n<p>Once saved, refresh your page and your post will appear!</p>"
+}

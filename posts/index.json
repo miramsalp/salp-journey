@@ -1,61 +1,19 @@
 [
   {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
-    "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
-    "readTime": 1,
-    "image": "./assets/images/chessr.PNG"
+  "id": "how-to-post",
+  "title": "How to Post a Blog",
+  "date": "2025-06-01",
+  "tags": ["Guide"],
+  "wordCount": 198,
+  "readTime": 1,
+  "image": ""
   },
   {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
+    "id": "bullet-1000",
+    "title": "Finally hit 1000 in Bullet!",
     "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
-    "readTime": 1,
-    "image": "./assets/images/chessr.PNG"
-  },
-  {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
-    "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
-    "readTime": 1,
-    "image": "./assets/images/chessr.PNG"
-  },
-  {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
-    "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
-    "readTime": 1,
-    "image": "./assets/images/chessr.PNG"
-  },
-  {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
-    "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
-    "readTime": 1,
-    "image": "./assets/images/chessr.PNG"
-  },
-  {
-    "id": "post3",
-    "title": "♟️ Reached 1000 Bullet Rating!",
-    "date": "2025-05-30",
-    "update": "",
-    "tags": ["Chess", "Bullet", "Milestone"],
-    "wordCount": 134,
+    "tags": ["Chess"],
+    "wordCount": 5,
     "readTime": 1,
     "image": "./assets/images/chessr.PNG"
   }
