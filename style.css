@@ -21,7 +21,7 @@ pre {
 }
 
 .hero-bg {
-  background-image: url('./assets/images/bg-from-freepik.jpg');
+  background-image: url('./assets/images/illustration-anime-city.jpg');
   background-size: cover;
   background-position: center;
   height: 450px;
@@ -48,3 +48,69 @@ pre {
 /* #navbar {
   background-color: black;
 } */
+
+.blog-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.dark .card {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .text-muted {
+  color: #cccccc !important; /* brighter gray */
+}
+
+
+
+body header {
+  background-color: rgb(255, 255, 255);
+  /* backdrop-filter: blur(6px); */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+body.dark header {
+  background-color: #1e1e1e;
+  /* backdrop-filter: blur(6px); */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+body.dark header .nav-link {
+  color: rgb(220, 220, 220) !important;
+  font-weight: bold;
+}
+
+body header .nav-link {
+  color: rgb(34, 34, 34) !important;
+  font-weight: bold;
+}
+
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+body.dark #theme-icon {
+  filter: invert(1);
+}
+
+.ic:hover {
+  background-color: rgb(106, 179, 185);
+}

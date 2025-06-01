@@ -13,65 +13,92 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section id = "heading">
-      <div class="container">
-        <header id="navbar">
-
+    <section id="heading">
+      <!-- <div class="container">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
+        >
           <div class="col-md-3 mb-2 mb-md-0">
             <a
               href="/"
               class="d-inline-flex link-body-emphasis text-decoration-none"
             >
-              <svg
-                class="bi"
-                width="40"
-                height="32"
-                role="img"
-                aria-label="Bootstrap"
-              >
-                <use xlink:href="#bootstrap"></use>
-              </svg>
+              <img src="./assets/images/github.svg" />
             </a>
           </div>
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li class = "bc"><a href="#" class="nav-link px-2 link-secondary" onclick="renderPostList()">Home</a></li>
-            <li class = "bc"><a href="#" class="nav-link px-2">Archive</a></li>
-            <li class = "bc"><a href="#" class="nav-link px-2">About</a></li>
-            <li class = "bc">
-              <a
-                href="https://github.com/miramsalp/salp-journey"
-                class="nav-link px-2"
-                >Github <img src="./assets/images/link-45deg.svg"
-              /></a>
-            </li>
+          <ul
+            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2">Features</a></li>
+            <li><a href="#" class="nav-link px-2">Pricing</a></li>
+            <li><a href="#" class="nav-link px-2">FAQs</a></li>
           </ul>
-          <!-- <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2">
-              Login
+          <div class="col-md-3 text-end">
+            <button id="theme-toggle" class="btn border-0">
+              <img
+                id="theme-icon"
+                src="./assets/icons/moon.svg"
+                width="24"
+                height="24"
+                alt="Toggle theme"
+              />
             </button>
-            <button type="button" class="btn btn-primary">Sign-up</button>
-          </div> -->
+          </div>
         </header>
-      </div>
+      </div> -->
     </section>
-    
 
     <!-- Hero background image -->
-   <div class="hero-bg"></div>
-
-
-    <!-- page overview -->
-    <section id = "page">
+    <div class="hero-bg">
       <div class="container">
-        <div class="row">
-          <!-- profile -->
-          <div class="col-md-4 col-sm-12 pb-5">
-            <div class="d-flex justify-content-center">
-              <div class="card rounded-5" style="width: 18rem">
+        <header
+          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
+        >
+          <div class="col-md-3 mb-2 mb-md-0">
+            <!-- <a
+              href="/"
+              class="d-inline-flex link-body-emphasis text-decoration-none"
+              >
+            </a> -->
+          </div>
+          <ul
+            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+          >
+            <li><a href="#" class="nav-link px-2 bc" onclick="renderPostList()">Home</a></li>
+            <li><a href="#" class="nav-link px-2 bc">Archive</a></li>
+            <li><a href="#" class="nav-link px-2 bc">About</a></li>
+            <li><a href="https://github.com/miramsalp/salp-journey" class="nav-link px-2 bc">Github</a></li>
+          </ul>
+          <div class="col-md-3 text-end">
+            <button id="theme-toggle" class="btn border-0">
+              <img
+                id="theme-icon"
+                src="./assets/icons/moon.svg"
+                width="24"
+                height="24"
+                alt="Toggle theme"
+              />
+            </button>
+          </div>
+        </header>
+      </div>
+    </div>
+
+    <section id="page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div
+            class="blog-wrapper d-flex flex-column flex-md-row gap-4 align-items-center align-items-md-start"
+          >
+            <!-- Profile Card -->
+            <div class="w-100" style="max-width: 18rem">
+              <div class="card w-100 rounded-5">
                 <img
                   src="./assets/images/meme1.jpg"
-                  class="card-img-top px-3 py-3 rounded-5"
+                  class="card-img-top px-3 py-3 rounded-5 w-100"
                   alt="tmp profile pic"
+                  style="height: auto"
                 />
                 <div class="card-body">
                   <h5 class="card-title tocenter">Miramsalp</h5>
@@ -81,7 +108,7 @@
                   <ul
                     class="nav col-md-12 justify-content-center list-unstyled d-flex"
                   >
-                    <li class="ms-3 ict">
+                    <li class="ms-3 ict ic">
                       <a
                         class="text-body-secondary"
                         href="https://github.com/miramsalp"
@@ -91,7 +118,7 @@
                         <img src="./assets/images/github.svg" height="30px" />
                       </a>
                     </li>
-                    <li class="ms-3 ict">
+                    <li class="ms-3 ict ic">
                       <a
                         class="text-body-secondary"
                         href="https://steamcommunity.com/id/ThePetch/"
@@ -101,7 +128,7 @@
                         <img src="./assets/images/steam.svg" height="30px" />
                       </a>
                     </li>
-                    <li class="ms-3 ict">
+                    <li class="ms-3 ict ic">
                       <a
                         class="text-body-secondary"
                         href="mailto:petchthanapat160@gmail.com"
@@ -115,18 +142,13 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Right: Blog Preview and Post Content -->
-          <div class="col-md-8">
-            <!-- Blog List -->
-            <div id="post-list"></div>
-
-            <!-- Pagination -->
-            <div id="pagination" class="text-center my-4"></div>
-
-            <!-- Full Post Content -->
-            <div id="post-content" class="d-none"></div>
+            <!-- Blog Area -->
+            <div style="min-width: 0; flex: 1" class="mb-3">
+              <div id="post-list"></div>
+              <div id="pagination" class="text-center"></div>
+              <div id="post-content" class="d-none"></div>
+            </div>
           </div>
         </div>
       </div>
