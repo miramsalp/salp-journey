@@ -1,66 +1,22 @@
+/* Main */
+
 body {
   font-family: 'Nunito', sans-serif;
+  background-color: #fff;
+  color: #000;
+  transition: all 0.3s ease;
 }
 
-
-.tocenter {
-    text-align: center;
-}
-
-.ict {
-    background-color: rgb(235, 243, 255);
-    padding: 5px;
-    border-radius: 20%;
-}
-
-.card {
-  border-radius: 15px;
-}
-.badge {
-  font-size: 0.75rem;
-  padding: 0.4em 0.6em;
-}
 pre {
   font-family: monospace;
   overflow-x: auto;
 }
 
-.hero-bg {
-  background-image: url('./assets/images/illustration-anime-city.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 450px;
-  position: relative;
-  z-index: 1;
-}
-
-#page {
-  margin-top: -100px; 
-  z-index: 10;
-  position: relative;
-}
-
-
-
-.bc {
-  width: 100px;
+.tocenter {
   text-align: center;
 }
 
-/* #navbar {
-  background-color: black;
-} */
-
-.blog-wrapper {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-body {
-  background-color: #fff;
-  color: #000;
-  transition: all 0.3s ease;
-}
+/* Dark mode */
 
 body.dark {
   background-color: #121212;
@@ -73,70 +29,27 @@ body.dark .card {
 }
 
 body.dark .text-muted {
-  color: #cccccc !important; /* brighter gray */
-}
-
-
-
-body .c2 {
-  background-color: rgb(255, 255, 255);
-  /* backdrop-filter: blur(6px); */
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  color: #cccccc !important;
 }
 
 body.dark .c2 {
   background-color: #1e1e1e;
-  /* backdrop-filter: blur(6px); */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
 
-body.dark .nav-link {
-  color: rgb(220, 220, 220) !important;
-  font-weight: bold;
-}
-
-body .nav-link {
-  color: rgb(34, 34, 34) !important;
-  font-weight: bold;
-}
-
+body.dark .nav-link,
 body.dark .navbar-brand {
   color: rgb(220, 220, 220) !important;
   font-weight: bold;
-}
-
-body .navbar-brand {
-  color: rgb(34, 34, 34) !important;
-  font-weight: bold;
-}
-
-.container {
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-body.dark #theme-icon {
-  color: rgb(220, 220, 220);
-}
-
-.ic:hover {
-  background-color: rgb(185, 243, 255);
-}
-
-.navbar {
-  padding: 0;
 }
 
 body.dark .navbar-toggler {
   background-color: rgb(95, 89, 89);
 }
 
-.bc:hover {
-  background-color: rgb(235, 243, 255);
-  border-radius: 8px;
+body.dark #theme-icon {
+  color: rgb(220, 220, 220);
 }
 
 body.dark .bc:hover {
@@ -144,16 +57,99 @@ body.dark .bc:hover {
   border-radius: 8px;
 }
 
-.nav-link:hover {
-  color: rgb(94, 228, 255) !important;
-}
-
 body.dark .nav-link:hover {
   color: rgb(94, 228, 255) !important;
 }
 
+body.dark #theme-toggle:hover svg {
+  color: rgb(94, 228, 255);
+  fill: rgb(94, 228, 255);
+}
+
+/* Layout & Container */
+
+.container {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.blog-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-bg {
+  background-image: url('./assets/images/illustration-anime-city.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  position: relative;
+  z-index: 1;
+}
+
+#page {
+  margin-top: -100px;
+  z-index: 10;
+  position: relative;
+}
+
+.navbar {
+  padding: 0;
+}
+
+body .c2 {
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Components */
+
+.card {
+  border-radius: 15px;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.4em 0.6em;
+}
+
+.ic, .ict {
+  background-color: rgb(235, 243, 255);
+  padding: 5px;
+  border-radius: 20%;
+}
+
+.bc {
+  width: 100px;
+  text-align: center;
+}
+
+/* Hover */
+
+.ic:hover {
+  background-color: rgb(185, 243, 255);
+}
+
+.bc:hover {
+  background-color: rgb(235, 243, 255);
+  border-radius: 8px;
+}
+
 .nav-link {
   transition: color 0.3s ease, background-color 0.3s ease;
+  font-weight: bold;
+  color: rgb(34, 34, 34) !important;
+}
+
+.nav-link:hover {
+  color: rgb(94, 228, 255) !important;
+}
+
+.navbar-brand {
+  color: rgb(34, 34, 34) !important;
+  font-weight: bold;
 }
 
 #theme-toggle:hover {
@@ -161,10 +157,6 @@ body.dark .nav-link:hover {
 }
 
 #theme-toggle:hover svg {
-  color: rgb(94, 228, 255);
-  fill: rgb(94, 228, 255);
-}
-body.dark #theme-toggle:hover svg {
   color: rgb(94, 228, 255);
   fill: rgb(94, 228, 255);
 }
