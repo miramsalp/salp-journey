@@ -1,3 +1,8 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+
 .tocenter {
     text-align: center;
 }
@@ -35,10 +40,7 @@ pre {
   position: relative;
 }
 
-.bc:hover {
-  background-color: rgb(235, 243, 255);
-  border-radius: 10%;
-}
+
 
 .bc {
   width: 100px;
@@ -117,13 +119,52 @@ body .navbar-brand {
 }
 
 body.dark #theme-icon {
-  filter: invert(1);
+  color: rgb(220, 220, 220);
 }
 
 .ic:hover {
-  background-color: rgb(106, 179, 185);
+  background-color: rgb(185, 243, 255);
 }
 
 .navbar {
   padding: 0;
+}
+
+body.dark .navbar-toggler {
+  background-color: rgb(95, 89, 89);
+}
+
+.bc:hover {
+  background-color: rgb(235, 243, 255);
+  border-radius: 8px;
+}
+
+body.dark .bc:hover {
+  background-color: rgb(235, 243, 255);
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: rgb(94, 228, 255) !important;
+}
+
+body.dark .nav-link:hover {
+  color: rgb(94, 228, 255) !important;
+}
+
+.nav-link {
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: rgb(235, 243, 255);
+}
+
+#theme-toggle:hover svg {
+  color: rgb(94, 228, 255);
+  fill: rgb(94, 228, 255);
+}
+body.dark #theme-toggle:hover svg {
+  color: rgb(94, 228, 255);
+  fill: rgb(94, 228, 255);
 }
