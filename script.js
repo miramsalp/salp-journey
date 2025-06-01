@@ -39,7 +39,7 @@ function renderPostList() {
         <div class="col-md-8 order-2 order-md-1">
           <div class="card-body p-0 pe-md-3 pt-3 pt-md-0">
             <h4 class="fw-bold">${post.title}</h4>
-            <div class="text-muted mb-2">📅 ${post.date} ${
+            <div class="text-muted mb-2"><img src = "./assets/icons/calendar4.svg"/> ${post.date} ${
       post.update ? `| 🔁 ${post.update}` : ""
     }</div>
             <div class="mb-2">${renderTags(post.tags)}</div>
@@ -97,7 +97,7 @@ function renderPost(id) {
       <div class="card p-4 mb-4 shadow">
         <button class="btn btn-link mb-3" onclick="renderPostList()">← Back to List</button>
         <h1 class="fw-bold mb-2">${post.title}</h1>
-        <div class="text-muted mb-2">📅 ${post.date} ${
+        <div class="text-muted mb-2"><img src = "./assets/icons/calendar4.svg"/> ${post.date} ${
         post.update ? `| 🔁 ${post.update}` : ""
       } • ${post.wordCount} words • ${post.readTime} min</div>
         <div class="mb-3">${renderTags(post.tags)}</div>
