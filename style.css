@@ -76,29 +76,40 @@ body.dark .text-muted {
 
 
 
-body header {
+body .c2 {
   background-color: rgb(255, 255, 255);
   /* backdrop-filter: blur(6px); */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
 
-body.dark header {
+body.dark .c2 {
   background-color: #1e1e1e;
   /* backdrop-filter: blur(6px); */
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
 
-body.dark header .nav-link {
+body.dark .nav-link {
   color: rgb(220, 220, 220) !important;
   font-weight: bold;
 }
 
-body header .nav-link {
+body .nav-link {
   color: rgb(34, 34, 34) !important;
   font-weight: bold;
 }
+
+body.dark .navbar-brand {
+  color: rgb(220, 220, 220) !important;
+  font-weight: bold;
+}
+
+body .navbar-brand {
+  color: rgb(34, 34, 34) !important;
+  font-weight: bold;
+}
+
 
 
 .container {
@@ -113,4 +124,8 @@ body.dark #theme-icon {
 
 .ic:hover {
   background-color: rgb(106, 179, 185);
+}
+
+.navbar {
+  padding: 0;
 }

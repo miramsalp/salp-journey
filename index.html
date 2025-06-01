@@ -13,65 +13,20 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section id="heading">
-      <!-- <div class="container">
-        <header
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
-        >
-          <div class="col-md-3 mb-2 mb-md-0">
-            <a
-              href="/"
-              class="d-inline-flex link-body-emphasis text-decoration-none"
-            >
-              <img src="./assets/images/github.svg" />
-            </a>
-          </div>
-          <ul
-            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
-          >
-            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2">Features</a></li>
-            <li><a href="#" class="nav-link px-2">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2">FAQs</a></li>
-          </ul>
-          <div class="col-md-3 text-end">
-            <button id="theme-toggle" class="btn border-0">
-              <img
-                id="theme-icon"
-                src="./assets/icons/moon.svg"
-                width="24"
-                height="24"
-                alt="Toggle theme"
-              />
-            </button>
-          </div>
-        </header>
-      </div> -->
-    </section>
-
+    <!-- merge hero-bg with navbar -->
     <!-- Hero background image -->
     <div class="hero-bg">
-      <div class="container">
-        <header
-          class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3"
-        >
-          <div class="col-md-3 mb-2 mb-md-0">
-            <!-- <a
-              href="/"
-              class="d-inline-flex link-body-emphasis text-decoration-none"
-              >
-            </a> -->
-          </div>
-          <ul
-            class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0"
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container c2 py-2">
+          <!-- Left: Brand -->
+          <a class="navbar-brand fw-bold" href="#" onclick="renderPostList()"
+            >Miramsalp</a
           >
-            <li><a href="#" class="nav-link px-2 bc" onclick="renderPostList()">Home</a></li>
-            <li><a href="#" class="nav-link px-2 bc">Archive</a></li>
-            <li><a href="#" class="nav-link px-2 bc">About</a></li>
-            <li><a href="https://github.com/miramsalp/salp-journey" class="nav-link px-2 bc">Github</a></li>
-          </ul>
-          <div class="col-md-3 text-end">
-            <button id="theme-toggle" class="btn border-0">
+
+          <!-- Right: Collapse Toggle + Dark Mode -->
+          <div class="d-flex align-items-center ms-auto">
+            <!-- Dark Mode Toggle -->
+            <button id="theme-toggle" class="btn border-0 me-2">
               <img
                 id="theme-icon"
                 src="./assets/icons/moon.svg"
@@ -80,9 +35,44 @@
                 alt="Toggle theme"
               />
             </button>
+
+            <!-- Collapse Button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
-        </header>
-      </div>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link bc" href="#" onclick="renderPostList()"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bc" href="#">Archive</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bc" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link bc"
+                  href="https://github.com/miramsalp/salp-journey"
+                  target="_blank"
+                  >Github</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
 
     <section id="page">
@@ -95,7 +85,7 @@
             <div class="w-100" style="max-width: 18rem">
               <div class="card w-100 rounded-5">
                 <img
-                  src="./assets/images/meme1.jpg"
+                  src="./assets/images/myprofilepic.jpg"
                   class="card-img-top px-3 py-3 rounded-5 w-100"
                   alt="tmp profile pic"
                   style="height: auto"
@@ -115,7 +105,7 @@
                         aria-label="Github"
                         target="_blank"
                       >
-                        <img src="./assets/images/github.svg" height="30px" />
+                        <img src="./assets/icons/github.svg" height="30px" />
                       </a>
                     </li>
                     <li class="ms-3 ict ic">
@@ -125,7 +115,7 @@
                         aria-label="Steam"
                         target="_blank"
                       >
-                        <img src="./assets/images/steam.svg" height="30px" />
+                        <img src="./assets/icons/steam.svg" height="30px" />
                       </a>
                     </li>
                     <li class="ms-3 ict ic">
@@ -135,7 +125,7 @@
                         aria-label="Gmail"
                         target="_blank"
                       >
-                        <img src="./assets/images/envelope.svg" height="30px" />
+                        <img src="./assets/icons/envelope.svg" height="30px" />
                       </a>
                     </li>
                   </ul>
