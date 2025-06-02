@@ -180,3 +180,30 @@ body .c2 {
   color: rgb(94, 228, 255);
   fill: rgb(94, 228, 255);
 }
+
+/* responsive for small screen found it overlapping when using mobile size s, m screen size */
+pre, code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+
+#post-content .card {
+  width: 100%;
+  overflow-x: auto;
+}
+
+#post-content {
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem;
+  }
+  pre {
+    font-size: 0.85rem;
+  }
+}
