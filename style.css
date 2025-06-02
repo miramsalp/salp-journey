@@ -130,7 +130,15 @@ body .c2 {
   background-color: rgb(55, 55, 55);
 }
 
+.tcy {
+  cursor: pointer;
+}
+
 /* Hover */
+
+.tcy:hover {
+  color: rgb(94, 228, 255);
+}
 
 .ach:hover strong {
   color: rgb(3, 57, 111);

@@ -47,7 +47,7 @@ function renderPostList() {
       <div class="row g-0 flex-column flex-md-row">
         <div class="col-md-8 order-2 order-md-1">
           <div class="card-body p-0 pe-md-3 pt-3 pt-md-0">
-            <h4 class="fw-bold">${post.title}</h4>
+            <h4 class="fw-bold tcy" onclick="renderPost('${post.id}')">${post.title}</h4>
             <div class="text-muted mb-2">
               <img src="./assets/icons/calendar4.svg"/> ${post.date} ${post.update ? `| 🔁 ${post.update}` : ""}
             </div>
@@ -130,7 +130,10 @@ function renderAboutPage() {
       </a>
       <hr class="my-4" />
       <h5 class="fw-bold">Sources of images used in this site</h5>
-      <ul><li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li></ul>
+      <ul>
+        <li><a href="https://gemini.google.com/" target="_blank">Gemini</a></li>
+        <li><a href="https://www.flaticon.com/ target="_blank">Flaticon</a></li>
+      </ul>
     </div>
   `;
 }
