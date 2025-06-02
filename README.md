@@ -10,13 +10,6 @@ Inspired by the layout and aesthetic of [fuwari](https://github.com/saicaca/fuwa
 - Blog posts are written in `.json` files and rendered dynamically
 - Supports tags, pagination, and reading time
 
-## Tech Stack
-
-- HTML5
-- Bootstrap 5
-- JavaScript (vanilla)
-- No frameworks, no build tools – easy to modify
-
 ## Folder Structure
 
 ```
