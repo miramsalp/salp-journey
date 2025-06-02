@@ -126,7 +126,19 @@ body .c2 {
   text-align: center;
 }
 
+.ach {
+  background-color: rgb(55, 55, 55);
+}
+
 /* Hover */
+
+.ach:hover strong {
+  color: rgb(3, 57, 111);
+}
+
+.ach:hover {
+  background-color: rgb(108, 193, 210);
+}
 
 .ic:hover {
   background-color: rgb(185, 243, 255);
