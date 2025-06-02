@@ -75,7 +75,7 @@ function renderPost(id) {
     .then((res) => res.json())
     .then((post) => {
       contentEl.innerHTML = `
-        <div class="card p-4 mb-4 shadow col-sm-12">
+        <div class="card p-4 mb-4 shadow">
           <button class="btn btn-link mb-3" onclick="renderPostList()">← Back to List</button>
           <h1 class="fw-bold mb-2">${post.title}</h1>
           <div class="text-muted mb-2">
